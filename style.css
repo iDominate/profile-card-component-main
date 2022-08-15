@@ -1,0 +1,147 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: #19A1AD;
+
+
+}
+
+
+.top-pattern {
+    background-image: url('./images/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: -18%;
+    top: -33%;
+
+}
+
+.bottom-pattern {
+    background-image: url('./images/bg-pattern-bottom.svg');
+    background-size: contain;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 48%;
+    right: -18%;
+
+
+}
+
+.main-container {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background: #fff;
+    top: 21%;
+    left: 38%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #eee;
+
+
+}
+
+.bg-img {
+    width: 330px;
+    height: 120px;
+    background: url('./images/bg-pattern-card.svg');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.img-container {
+    width: 90px;
+    height: 90px;
+    background: url('./images/image-victor.jpg');
+    border-radius: 50%;
+    background-position: center;
+    border: 4px solid white;
+
+    transform: translate(116px, -49px);
+
+
+
+}
+
+.personal-info-container {
+    margin-top: -31px;
+}
+
+.personal-info-container>p:first-of-type {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.personal-info-container>p:first-of-type>span {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: 200;
+}
+
+br {
+    display: block;
+    height: 3px;
+    width: 330px;
+    background-color: black;
+
+
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-media-container>div>p {
+    margin-bottom: 0px;
+}
+
+.personal-info-container>p:last-child {
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+.social-media-container>div>p:nth-child(2) {
+    font-size: 12px;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+.social-media-container>div>p:first-child {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+@media screen and (min-width : 0px) and (max-width: 415px) {
+    .main-container {
+        transform: translate(-115px, 29px);
+    }
+
+    .top-pattern {
+        width: 400px;
+        margin-top: 111px;
+
+        margin-left: -82px;
+    }
+
+    .bottom-pattern {
+
+        width: 400px;
+        margin-top: 121px;
+
+        margin-right: -94px;
+
+    }
+}
